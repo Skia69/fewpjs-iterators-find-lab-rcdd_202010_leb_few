@@ -1,4 +1,5 @@
 const superbowlWin = (arr) => { 
-  let result = arr.find(el => el.year === 'W')
-  return !!result ? result.year : undefined
+  let result = arr.find(el => el.result === 'W')
+  if(result) return result.year
+  return undefined
 }
